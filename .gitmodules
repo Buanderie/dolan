@@ -1,0 +1,3 @@
+[submodule "extdeps/Catch"]
+	path = extdeps/Catch
+	url = https://github.com/philsquared/Catch.git
