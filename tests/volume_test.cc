@@ -6,7 +6,18 @@
 // Catch
 #include "catch.hpp"
 
+//
+#include <iostream>
+
+using namespace std;
+
 TEST_CASE( "Volumes can be created and destroyed", "[Volume]" ) {
+
+    dolan::Tensor<double> t(7,5,3);
+    cout << t.sizes()[0] << endl;
+    dolan::Tensor<double> t2 = t[0][1];
+    cout << "t offset=" << t.sotrageOffset() << endl;
+    cout << "t2 offset=" << t2.sotrageOffset() << endl;
 
     dolan::Volumef* vol = 0;
 
